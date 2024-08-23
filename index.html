@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Hello, I'm Likhith Kumar K</h1>
+            <p>Computer Science Engineer | Full-Stack Developer | Machine Learning Enthusiast</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate computer science engineer with experience in frontend and backend development, machine learning, and UI/UX design. I enjoy creating solutions that make a difference.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Diabetes Prediction Web App</h3>
+                <p>A web app using Streamlit to predict diabetes based on user input data.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Health monitoring device for Elderly People </h3>
+                <p>A cutting-edge health monitoring device designed for elderly individuals, offering real-time tracking of vital signs and emergency alerts to ensure safety and well-being.</p>
+            </div>
+            <div class="project">
+                <h3>Computer Graphics project on Sailing of the Ship day and night.</h3>
+                <p>Developed a computer graphics project simulating the sailing of a ship with dynamic day and night cycles, featuring realistic sun positioning, sky color transitions, and adjustable sea height for enhanced user interaction.</p>
+             
+            </div>
+            <div class="project">
+                <h3>Pharmacy database management System.</h3>
+                <p>Developed a robust Pharmacy Database Management System to streamline inventory tracking, prescription management, and patient records, ensuring efficient and secure handling of pharmaceutical data.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Likhith Kumar K. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/likhith-poojari-b108a6234">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <!-- Add other social media links as needed -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
